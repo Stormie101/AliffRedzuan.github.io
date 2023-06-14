@@ -8,6 +8,9 @@
     padding: 0;
   }
 
+  .header a{
+padding: 10px;
+  }
   
   /* ----------Styles for desktop screens---------------- */
 @media (min-width: 868px) {
@@ -117,11 +120,11 @@ z-index: 1;
 overflow: hidden;
 }
 
-button:hover {
+#topbutton:hover {
 color: white;
 }
 
-button:after {
+#topbutton:after {
 content: "";
 background: black;
 position: absolute;
@@ -134,7 +137,7 @@ transform: skewX(-45deg) scale(0, 1);
 transition: all 0.5s;
 }
 
-button:hover:after {
+#topbutton:hover:after {
 transform: skewX(-45deg) scale(1, 1);
 -webkit-transition: all 0.5s;
 transition: all 0.5s;
@@ -764,11 +767,11 @@ animation: chitchat linear both var(--btn-animation-duration);
   overflow: hidden;
   }
   
-  button:hover {
+  #topbutton:hover {
   color: white;
   }
   
-  button:after {
+  #topbutton:after {
   content: "";
   background: black;
   position: absolute;
@@ -781,7 +784,7 @@ animation: chitchat linear both var(--btn-animation-duration);
   transition: all 0.5s;
   }
   
-  button:hover:after {
+  #topbutton:hover:after {
   transform: skewX(-45deg) scale(1, 1);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -1419,11 +1422,11 @@ animation: chitchat linear both var(--btn-animation-duration);
   overflow: hidden;
   }
   
-  button:hover {
+  #topbutton:hover {
   color: white;
   }
   
-  button:after {
+  #topbutton:after {
   content: "";
   background: black;
   position: absolute;
@@ -1436,7 +1439,7 @@ animation: chitchat linear both var(--btn-animation-duration);
   transition: all 0.5s;
   }
   
-  button:hover:after {
+  #topbutton:hover:after {
   transform: skewX(-45deg) scale(1, 1);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -1584,7 +1587,7 @@ animation: chitchat linear both var(--btn-animation-duration);
   .projectbox p {
   word-wrap: break-word;
   color: black;
-  font-size: 10px;
+  font-size: 13px;
   }
   
   #description{
