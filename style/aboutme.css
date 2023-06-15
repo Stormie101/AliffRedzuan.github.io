@@ -36,12 +36,13 @@ padding: 10px;
 /* above is the header section */
 .content{
     max-height: max-content;
-    margin: 50px;
 }
 
 #head2 {
   display: flex;
   max-height: 250px;
+  margin-top: 50px;
+  margin-left: 50px;
 }
 
 #head2 p {
@@ -82,6 +83,7 @@ padding: 10px;
 padding-top: 0px;
 color: rgb(59, 57, 57);
 font-family: sans-serif;
+margin-left: 50px;
 }
 
 #buttonholder{
@@ -144,37 +146,47 @@ transition: all 0.5s;
 }
 /* MORE ABOUT ME SECTION START HERE */
 .box1{
+padding-top: 10px;
+padding-bottom: 10px;
 margin-top: 5px;
 padding: 10px;
 font-family: system-ui;
+background-color: #f0f0f0;
+padding-left: 50px;
 }
 
 .box1 h3{
 font-size: 30px;
 margin-top: 20px;
 margin-bottom: 10px;
+background-color: #f0f0f0;
 }
 
 .box1 b{
 color: gray;
+background-color: #f0f0f0;
 }
 
 .box1 p{
 color: rgb(59, 57, 57);
+background-color: #f0f0f0;
 }
 
 /* ALL THE TABLE ABOUT TECHNOLOGIES */
 table{
 margin-top: 5px;
 margin-left: 15px;
+background-color: #f0f0f0;
 }
 
 table td{
+  background-color: #f0f0f0;
 padding-right: 45px;
 color: rgb(59, 57, 57);
 }
 
 table li{
+  background-color: #f0f0f0;
 color: rgb(59, 57, 57);
 }
 /* EXPERIENCE SECTION START HERE */
@@ -183,6 +195,7 @@ color: rgb(59, 57, 57);
 margin-top: 20px;
 padding: 10px;
 font-family: system-ui;
+padding-left: 50px;
 }
 
 .box2 h2{
@@ -252,16 +265,20 @@ margin-top: 20px;
 padding: 10px;
 height: fit-content;
 font-family: system-ui;
+padding-left: 50px;
+background-color: #f0f0f0;
 }
 
 .box3 h2{
 font-size: 30px;
 margin-top: 50px;
 margin-bottom: 10px;
+background-color: #f0f0f0;
 }
 
 .project-container{
 display: flex;
+background-color: #f0f0f0;
 }
 
 .projectbox{
@@ -685,7 +702,6 @@ animation: chitchat linear both var(--btn-animation-duration);
   /* above is the header section */
   .content{
       max-height: max-content;
-      margin-left: 10px;
   }
   
   #head2 {
@@ -795,20 +811,24 @@ animation: chitchat linear both var(--btn-animation-duration);
   padding: 10px;
   font-family: system-ui;
   font-size: 15px;
+  background-color: #f0f0f0;
   }
   
   .box1 h3{
   font-size: 25px;
   margin-top: 50px;
   margin-bottom: 10px;
+  background-color: #f0f0f0;
   }
   
   .box1 b{
   color: gray;
+  background-color: #f0f0f0;
   }
   
   .box1 p{
   color: rgb(59, 57, 57);
+  background-color: #f0f0f0;
   
   }
   
@@ -816,15 +836,18 @@ animation: chitchat linear both var(--btn-animation-duration);
   table{
   margin-top: 5px;
   margin-left: 15px;
+  background-color: #f0f0f0;
   }
   
   table td{
   padding-right: 45px;
   color: rgb(59, 57, 57);
+  background-color: #f0f0f0;
   }
   
   table li{
   color: rgb(59, 57, 57);
+  background-color: #f0f0f0;
   }
   /* EXPERIENCE SECTION START HERE */
   
@@ -902,16 +925,19 @@ animation: chitchat linear both var(--btn-animation-duration);
   padding: 10px;
   height: fit-content;
   font-family: system-ui;
+  background-color: #f0f0f0;
   }
   
   .box3 h2{
   font-size: 25px;
   margin-top: 50px;
   margin-bottom: 10px;
+  background-color: #f0f0f0;
   }
   
   .project-container{
   display: flex;
+  background-color: #f0f0f0;
   }
   
   .projectbox{
@@ -1339,7 +1365,7 @@ animation: chitchat linear both var(--btn-animation-duration);
   /* above is the header section */
   .content{
       max-height: max-content;
-      margin-left: 10px;
+      /* margin-left: 10px; */
   }
   
   #head2 {
@@ -1385,12 +1411,13 @@ animation: chitchat linear both var(--btn-animation-duration);
   line-height: 16px;
   color: rgb(59, 57, 57);
   font-family: sans-serif;
+  margin-left: 10px;
   }
   
   #buttonholder{
   margin-top: 20px;
   width: max-content;
-  margin-left: 0px;
+  margin-left: 10px;
   }
   
   /* #buttonholder button{
@@ -1449,21 +1476,25 @@ animation: chitchat linear both var(--btn-animation-duration);
   margin-top: 25px;
   padding: 10px;
   font-family: system-ui;
+  background-color: #f0f0f0;
   }
   
   .box1 h3{
   font-size: 22px;
   margin-top: 5px;
   margin-bottom: 10px;
+  background-color: #f0f0f0;
   }
   
   .box1 b{
   color: gray;
+  background-color: #f0f0f0;
   }
   
   .box1 p{
   color: rgb(59, 57, 57);
   font-size: 14px;
+  background-color: #f0f0f0;
   }
   
   /* ALL THE TABLE ABOUT TECHNOLOGIES */
@@ -1471,15 +1502,18 @@ animation: chitchat linear both var(--btn-animation-duration);
   margin-top: 5px;
   margin-left: 15px;
   font-size: 14px;
+  background-color: #f0f0f0;
   }
   
   table td{
   padding-right: 45px;
   color: rgb(59, 57, 57);
+  background-color: #f0f0f0;
   }
   
   table li{
   color: rgb(59, 57, 57);
+  background-color: #f0f0f0;
   }
   /* EXPERIENCE SECTION START HERE */
   
@@ -1559,6 +1593,7 @@ animation: chitchat linear both var(--btn-animation-duration);
   margin-top: 10px;
   height: fit-content;
   font-family: system-ui;
+  background-color: #f0f0f0;
   }
   
   .box3 h2{
@@ -1566,10 +1601,12 @@ animation: chitchat linear both var(--btn-animation-duration);
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 10px;
+  background-color: #f0f0f0;
   }
   
   .project-container{
   display: flex;
+  background-color: #f0f0f0;
   }
   
   .projectbox{
@@ -1582,6 +1619,7 @@ animation: chitchat linear both var(--btn-animation-duration);
   position: relative;
   font-size: 12px;
   margin-right: 5px;
+  
   }
   
   .projectbox p {
@@ -1605,7 +1643,7 @@ animation: chitchat linear both var(--btn-animation-duration);
   }
   
   /* Payment section start here */
-  
+/*   
   .box4{
   margin-left: 10px;
   padding: 10px;
@@ -1659,12 +1697,11 @@ animation: chitchat linear both var(--btn-animation-duration);
   padding: 5px;
   text-align: center;
   font-weight: bold;
-  }
+  } */
   
   /* CERTIFICATE SECTION */
   .certificate-box{
     text-align: center;
-    display: none;
     }
   
     .certificate-box h3{
