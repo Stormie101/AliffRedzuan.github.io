@@ -808,6 +808,7 @@ animation: chitchat linear both var(--btn-animation-duration);
   /* MORE ABOUT ME SECTION START HERE */
   .box1{
   margin-top: 10px;
+  margin-bottom: 10px;
   padding: 10px;
   font-family: system-ui;
   font-size: 15px;
@@ -835,6 +836,7 @@ animation: chitchat linear both var(--btn-animation-duration);
   /* ALL THE TABLE ABOUT TECHNOLOGIES */
   table{
   margin-top: 5px;
+  margin-bottom: 5px;
   margin-left: 15px;
   background-color: #f0f0f0;
   }
@@ -1036,6 +1038,8 @@ animation: chitchat linear both var(--btn-animation-duration);
       font-size: 25px;
       margin-top: 50px;
       margin-bottom: 10px;
+      font-family: system-ui;
+
     }
   
     #slideshow {
@@ -1702,6 +1706,7 @@ animation: chitchat linear both var(--btn-animation-duration);
   /* CERTIFICATE SECTION */
   .certificate-box{
     text-align: center;
+    overflow: hidden;
     }
   
     .certificate-box h3{
