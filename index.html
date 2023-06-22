@@ -1,17 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello Stranger!</title>
-    <link rel="stylesheet" href="style/welcome.css">
+  <title>Loading Screen</title>
+  <style>
+
+    body {
+    margin: 0;
+    padding: 0;
+    }
+
+    #loading-screen {
+      width: 100%;
+      height: 100vh;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    
+    #loading-bar {
+      width: 0%;
+      height: 20px;
+      background-color: #25e274;
+      transition: width 1s ease;
+    }
+
+    #loading-progress{
+        color: white;
+        margin-top: 15px;
+        font-size: 25px;
+    }
+  </style>
 </head>
 <body>
-    <div id="animation"></div>
-    <div>
-    <a href="aboutme.html"><button class="button-89" role="button">Continue?</button></a>
-    </div>
-    <script src="javascript/welcome.js"></script>
+  <div id="loading-screen">
+    <div id="loading-bar"></div>
+    <span id="loading-progress">0%</span>
+  </div>
+
+  <script>
+    // Simulate loading progress
+    let progress = 0;
+    const loadingBar = document.getElementById('loading-bar');
+    const loadingProgress = document.getElementById('loading-progress');
+    
+    function simulateLoading() {
+      if (progress < 100) {
+        progress++;
+        loadingBar.style.width = progress + '%';
+        loadingProgress.innerText = progress + '%';
+        setTimeout(simulateLoading, 50);
+      } else {
+        // Redirect to another HTML file
+        window.location.href = 'aboutme.html';
+      }
+    }
+    
+    simulateLoading();
+  </script>
 </body>
 </html>
