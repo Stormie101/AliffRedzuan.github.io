@@ -247,16 +247,24 @@ margin-bottom: 1px;
 }
 
 /* experience 1 */
-/* #expe1 {
+#expe1 {
 display: none;
 }
 
 #expe1:target,
 [id^="expe1"] {
 display: block;
-} */
+}
 
 /* experience 2 */
+#expe2 {
+  display: none;
+  }
+  
+  #expe2:target,
+  [id^="expe2"] {
+  display: block;
+  }
 /* experience 3 */
 /* experience 4 */
 
