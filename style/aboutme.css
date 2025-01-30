@@ -20,6 +20,7 @@
     justify-content: flex-end;
     padding: 20px;
     background-color: #f0f0f0;
+    border-bottom: 1px solid black;
   }
 
 .header a {
@@ -148,18 +149,17 @@ transition: all 0.5s;
 }
 /* MORE ABOUT ME SECTION START HERE */
 .box1{
-padding-top: 10px;
 padding-bottom: 10px;
-margin-top: 5px;
+margin-top: 20px;
 padding: 10px;
 font-family: system-ui;
 background-color: #f0f0f0;
 padding-left: 50px;
+padding: 40px;
 }
 
 .box1 h3{
 font-size: 30px;
-margin-top: 20px;
 margin-bottom: 10px;
 background-color: #f0f0f0;
 }
@@ -195,14 +195,13 @@ color: rgb(59, 57, 57);
 
 .box2{
 margin-top: 20px;
-padding: 10px;
 font-family: system-ui;
 padding-left: 50px;
+padding: 40px;
 }
 
 .box2 h2{
 font-size: 30px;
-margin-top: 50px;
 margin-bottom: 10px;
 }
 
@@ -246,33 +245,24 @@ color: gray;
 margin-bottom: 1px;
 }
 
-/* experience 1 */
-#expe1 {
-display: none;
-}
+        /* Hide all experiences initially */
+        .experience {
+          display: none;
+          opacity: 0;
+          transition: opacity 0.3s ease-in-out;
+      }
 
-#expe1:target,
-[id^="expe1"] {
-display: block;
-}
-
-/* experience 2 */
-#expe2 {
-  display: none;
-  }
-  
-  #expe2:target,
-  [id^="expe2"] {
-  display: block;
-  }
-/* experience 3 */
-/* experience 4 */
+      /* Ensure one experience is shown */
+      .active {
+          display: block;
+          opacity: 1;
+      }
 
 
 /* PROJECT CREATION SECTION START HERE */
 .box3{
 margin-top: 20px;
-padding: 10px;
+padding: 40px;
 height: fit-content;
 font-family: system-ui;
 padding-left: 50px;
@@ -281,7 +271,6 @@ background-color: #f0f0f0;
 
 .box3 h2{
 font-size: 30px;
-margin-top: 50px;
 margin-bottom: 10px;
 background-color: #f0f0f0;
 }

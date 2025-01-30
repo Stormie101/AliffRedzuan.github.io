@@ -24,7 +24,7 @@
                 I'm Aliff , <br>
                 <span id="developerDesignation">Full Stack Developer</span>.
             </p>
-            <img src="insert/pict1.png">
+            <img src="insert/my picture.jpeg">
         </div>
         <div id="desc">
             <p>I am currently a Computer Science student at University Poly-Tech Malaysia and is deeply
@@ -104,13 +104,24 @@
         <div class="box2" id="experience">
             <h2>/ Experience</h2>
             <div class="experiencebox">
-                <a href="#expe1">1st Experience</a>
-                <a href="#expe2">Experience 2</a>
+                <a href="#" class="experience-link" data-target="expe1">Full Stack Web Developer</a>
+                <a href="#" class="experience-link" data-target="expe2">Red One Sale Assistant</a>
                 <!--<a href="#expe3">Experience 3</a>
         <a href="#expe4">Experience 4</a> -->
             </div>
-            <div id="expe1">
-                <p class="expe1Title">Red one Sales Advisor @ <b style="font-weight: 600; color: black;">Laksaman Gemilang</b></p>
+            <div id="expe1" class="experience active">
+                <p class="expe1Title">Internship - Full Stack Web Developer @ <b style="font-weight: 600; color: black;">KYROL Security Labs</b></p>
+                <p class="expe1UnderTitle">August 2023 - November 2023</p>
+                <ul>
+                    <li>Skilled in <b>designing and implementing</b> robust, scalable, and secure web applications.</li>
+                    <li>Demonstrated proficiency in <b>identifying and resolving</b> complex technical challenges.</li>
+                    <li>Proficient in both <b>front-end and back-end web development</b></li>
+                    <li>Experience in <b>database management</b> using SQL</li>
+                </ul>
+            </div>
+
+            <div id="expe2" class="experience">
+                <p class="expe1Title">Full Time - Red one Sales Advisor @ <b style="font-weight: 600; color: black;">Laksaman Gemilang</b></p>
                 <p class="expe1UnderTitle">March 2021 - Jun 2021</p>
                 <ul>
                     <li>Developed <b>strong interpersonal and communication skills</b> through extensive customer
@@ -119,16 +130,6 @@
                         solutions.</li>
                     <li>Independently <b>managed and prioritized tasks</b> to meet sales targets and deadlines.</li>
                     <li><b>Committed to work</b> from 10 A.M to 10 P.M</li>
-                </ul>
-            </div>
-            <div id="expe2">
-                <p class="expe1Title">INTERN Developer @ <b style="font-weight: 600; color: black;">KYROL Security Labs</b></p>
-                <p class="expe1UnderTitle">August 2023 - November 2023</p>
-                <ul>
-                    <li>Skilled in <b>designing and implementing</b> robust, scalable, and secure web applications.</li>
-                    <li>Demonstrated proficiency in <b>identifying and resolving</b> complex technical challenges.</li>
-                    <li>Proficient in both <b>front-end and back-end web development</b></li>
-                    <li>Experience in <b>database management</b> using SQL</li>
                 </ul>
             </div>
         </div>
@@ -152,6 +153,11 @@
                     <p id="description">it's aim to help people that dont have any knowledge about exercises for gym or
                         home-exercise.</p>
                     <p id="MLanguage">IONIC(ANGULAR)</p>
+                </div>
+                <div class="projectbox">
+                    <h3>Customer Service Report Web System</h3>
+                    <p id="description">Aim to help the staff to generate a customer service report and save it in database</p>
+                    <p id="MLanguage">HTML, CSS, JAVA, MYSQL, PHP</p>
                 </div>
             </div>
         </div>
@@ -277,6 +283,27 @@
 
         // Call the updateDeveloperDesignation function every 3 seconds
         setInterval(updateDeveloperDesignation, 1500);
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const links = document.querySelectorAll(".experience-link");
+            const sections = document.querySelectorAll(".experience");
+
+            links.forEach(link => {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault(); // Prevent default anchor behavior
+
+                    const targetId = this.getAttribute("data-target");
+
+                    // Hide all sections
+                    sections.forEach(section => {
+                        section.classList.remove("active");
+                    });
+
+                    // Show the targeted section
+                    document.getElementById(targetId).classList.add("active");
+                });
+            });
+        });
     </script>
     </div>
 </body>
